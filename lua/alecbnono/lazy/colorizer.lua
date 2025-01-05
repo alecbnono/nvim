@@ -1,7 +1,6 @@
 return {
-	"norcalli/nvim-colorizer.lua",
-	opts = {
-		"*",
+	"catgoose/nvim-colorizer.lua",
+	event = "BufReadPre",
+	opts = { -- set to setup table
 	},
-	css = { css = true },
 }
