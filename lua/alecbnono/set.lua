@@ -1,5 +1,7 @@
 vim.opt.termguicolors = true
 
+vim.g.netrw_bufsettings = "noma nomod nu rnu nobl nowrap ro"
+
 vim.opt.relativenumber = true
 vim.opt.number = true
 vim.opt.mouse = "a"

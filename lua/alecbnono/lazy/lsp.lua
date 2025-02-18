@@ -206,16 +206,12 @@ return {
 				--    https://github.com/pmizio/typescript-tools.nvim
 				--
 				-- But for many setups, the LSP (`ts_ls`) will work just fine
-				html = {},
-				cssls = {},
 				jsonls = {},
 				ts_ls = {},
 				emmet_ls = {
 					capabilities = capabilities,
 					filetypes = {
-						"css",
 						"eruby",
-						"html",
 						"javascript",
 						"javascriptreact",
 						"less",
@@ -267,6 +263,7 @@ return {
 				"stylua", -- Used to format Lua code
 				"prettier",
 				"prettierd",
+				"clang-format",
 			})
 			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
