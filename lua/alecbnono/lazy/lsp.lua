@@ -14,6 +14,9 @@ return {
 		},
 	},
 	{ "Bilal2453/luvit-meta", lazy = true },
+
+	{ "mfussenegger/nvim-jdtls" },
+
 	{
 		-- Main LSP Configuration
 		"neovim/nvim-lspconfig",
@@ -38,6 +41,7 @@ return {
 						html = 2,
 						css = 2,
 						c = 8,
+						h = 8,
 					}
 
 					local size = indent[ft] or 4 -- Default to 4 spaces if language not listed
@@ -211,6 +215,8 @@ return {
 				emmet_ls = {
 					capabilities = capabilities,
 					filetypes = {
+						"html",
+						"css",
 						"eruby",
 						"javascript",
 						"javascriptreact",
