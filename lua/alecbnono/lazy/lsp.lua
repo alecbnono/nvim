@@ -1,5 +1,4 @@
 return {
-
 	-- LSP Plugins
 	{
 		-- `lazydev` configures Lua LSP for your Neovim config, runtime and plugins
@@ -15,14 +14,13 @@ return {
 	},
 	{ "Bilal2453/luvit-meta", lazy = true },
 
-	{ "mfussenegger/nvim-jdtls" },
-
 	{
 		-- Main LSP Configuration
 		"neovim/nvim-lspconfig",
 		dependencies = {
 			-- Automatically install LSPs and related tools to stdpath for Neovim
 			{ "williamboman/mason.nvim", config = true }, -- NOTE: Must be loaded before dependants
+			{ "jay-babu/mason-nvim-dap.nvim" },
 			"williamboman/mason-lspconfig.nvim",
 			"WhoIsSethDaniel/mason-tool-installer.nvim",
 
@@ -270,6 +268,9 @@ return {
 				"prettier",
 				"prettierd",
 				"clang-format",
+				"java-debug-adapter",
+				"java-test",
+				"google-java-format",
 			})
 			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 

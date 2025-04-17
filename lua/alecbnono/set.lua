@@ -41,8 +41,8 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 8
 
--- Sets the terminal (zsh)
-vim.opt.shell = "/usr/bin/zsh"
+-- Sets the terminal (bash)
+vim.opt.shell = "/usr/bin/bash"
 
 vim.opt.swapfile = false
 vim.opt.backup = false

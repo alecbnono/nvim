@@ -12,6 +12,7 @@ return {
 			"html",
 			"css",
 			"javascript",
+			"java",
 			"tsx",
 			"lua",
 			"luadoc",
